@@ -12,7 +12,7 @@ pipeline {
         stage('continuacion') {
           steps {
             sh 'echo \'asdasd\' >> itworksall.ok'
-            sleep 10
+            sleep(time: 10, unit: 'MILLISECONDS')
           }
         }
       }
